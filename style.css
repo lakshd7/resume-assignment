@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #93c8e4;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume {
+  position: relative;
+  background-color: white;
+  height: 1080px;
+  width: 1200px;
+  border-radius: 10px;
+  margin-block: 40px;
+}
+
+.left-side {
+  background-image: linear-gradient(150deg, #7c0065, #000067);
+  height: inherit;
+  width: 420px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.left-side .intro {
+  height: 220px;
+  border-bottom: 2px solid #cacaca83;
+  text-align: center;
+  padding-block: 30px;
+  margin-inline: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.left-side .intro .name {
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.left-side .intro .job {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.left-side .contact-info {
+  margin-top: 60px;
+  padding-inline: 40px;
+}
+
+.left-side .contact-info h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.left-side .contact-info ul {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.left-side .contact-info ul li {
+  margin: 20px 0;
+  letter-spacing: 0.2px;
+}
+
+.left-side .contact-info ul li i {
+  margin-right: 10px;
+  color: #b889ff;
+}
+
+@keyframes gradientMove {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.left-side .contact-info ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  background: linear-gradient(to right, yellow, orange, red, orange, yellow);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s linear infinite;
+  transition: 0.2s;
+}
+
+.left-side .contact-info ul li a:hover {
+  background: linear-gradient(to right, violet, #c067ff, #7b7bff, #49ff49, #49ff49, #7b7bff, #c067ff, violet);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+
+.education {
+  margin-top: 60px;
+  padding-inline: 40px;
+}
+
+.education h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.education h2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.education .year {
+  color: rgb(194, 154, 255);
+  font-size: 14px;
+}
+
+.education p {
+  font-size: 16px;
+}
+
+.languages {
+  margin-top: 50px;
+  padding-inline: 40px;
+}
+
+.languages h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.languages .language h1 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.languages .language .bar {
+  height: 10px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #0000006e;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.bar .bar-value {
+  height: 100%;
+  background-color: #791fff;
+  border-radius: 5px;
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 420px;
+  padding: 40px;
+}
+
+.right-side section .title {
+  color: #290067;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.right-side section p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.skill {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.skill h1 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.skill .bar {
+  height: 12px;
+  border-radius: 24px;
+  background-color: #00000023;
+}
+
+.skill .bar .bar-value {
+  border-radius: 24px;
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.certification h1 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.certification .year {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  margin-top: -3px;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.hobby {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: #000091;
+}
+
+.hobby i {
+  font-size: 17px;
+}
+
+.hobby h1 {
+  font-weight: 600;
+}
